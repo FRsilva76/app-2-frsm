@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block encabezado %}
+{%endblock%}
+
+{%block contenido%}
+<a>hola :3</a>
+<link rel= "stylesheet" href="static\estilo.css">
+
+<section class="con">
+    <div class="container">
+      <div class="columns is-centered">
+        <!-- formato del formulario  -->
+        <form action="/registro_usuario" method="post" class="box">
+          <center>
+          <div class="field">
+            <label for="" class="label">Nombre Usuario</label>
+            <div class="control has-icons-left">
+              <input type="text" name="nombre_usuario" placeholder="Roco99" class="input" required>
+                <span class="icon is-small is-left">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+          </center>
+          <center>
+          <label for="" class="label">Correo</label>
+          <div class="control has-icons-left">
+            <input type="email" name="email" placeholder="silvamejiafr@gmail.com" class="input" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+        </center>
+        <center>
+          <div class="=field">
+            <label for="" class="label">Contraseña</label>
+            <div class="control has-icons-left">
+              <input type="password" name="password" placeholder="**************" class="input" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-lock"></i>
+              </span>
+            </div>
+          </div>
+        </center>
+        <center>
+             <div class="field">
+               <button class="button is success"> 
+                 Registrar
+             </div>
+            </center>
+        </form>
+      </div>
+    </div>
+  </section>
+{%endblock%}
